@@ -1,5 +1,5 @@
-'use client';
 
+import React from 'react';
 import { ChevronDown, Star, Shield, Award, MessageCircle } from 'lucide-react';
 
 const Hero = () => {

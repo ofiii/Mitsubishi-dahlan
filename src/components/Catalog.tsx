@@ -1,7 +1,7 @@
-'use client';
 
-import { useState } from 'react';
-import { cars, formatPrice, Car, Variant } from '@/data/cars';
+
+import React, { useState } from 'react';
+import { cars, formatPrice, Car, Variant } from '../data/cars';
 import { MessageCircle, ChevronDown, ChevronUp, Fuel, Gauge, Settings, Check, Sparkles } from 'lucide-react';
 
 const Catalog = () => {

@@ -1,6 +1,6 @@
-'use client';
 
-import { useState, useEffect } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote, MapPin, Car, Camera } from 'lucide-react';
 
 interface Testimonial {
@@ -97,9 +97,9 @@ const Customers = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {[
-            { value: '500+', label: 'Happy Customers' },
+            { value: '100+', label: 'Happy Customers' },
             { value: '4.9', label: 'Rating', icon: Star },
-            { value: '10+', label: 'Tahun Pengalaman' },
+            { value: '9+', label: 'Tahun Pengalaman' },
             { value: '100%', label: 'Kepuasan' },
           ].map((stat, index) => (
             <div key={index} className="glass rounded-2xl p-6 text-center hover:border-mitsubishi-red/50 transition-colors">

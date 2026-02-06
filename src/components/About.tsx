@@ -1,5 +1,5 @@
 // components/About.tsx
-'use client';
+import React from 'react';
 
 import { Award, Shield, Clock, Users, MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
 

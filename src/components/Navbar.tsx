@@ -1,8 +1,5 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import { Menu, X, Phone, Car } from 'lucide-react';
-import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,15 +30,13 @@ const Navbar = () => {
     }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-           <a href="#beranda" className="flex items-center gap-3 group">
+          
+          <a href="#beranda" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="w-12 h-12">
-                <Image 
+                <img 
                   src="/images/logo/mitsubishi.svg"
                   alt="Mitsubishi Logo"
-                  width={40}
-                  height={40}
                   className="w-full h-full object-contain"
                 />
               </div>

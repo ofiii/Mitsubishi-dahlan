@@ -1,6 +1,4 @@
-// components/Footer.tsx
-'use client';
-
+import React from 'react';
 import { 
   Phone, 
   Mail, 
@@ -9,10 +7,8 @@ import {
   Instagram,
   Facebook,
   Youtube,
-  Car,
   ChevronRight
 } from 'lucide-react';
-import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,7 +26,7 @@ const Footer = () => {
     { name: 'Pajero Sport', href: '#katalog' },
     { name: 'Triton', href: '#katalog' },
     { name: 'L300', href: '#katalog' },
-    { name: 'Colt Diesel', href: '#katalog' },
+    { name: 'XForce', href: '#katalog' },
   ];
 
   const socialLinks = [
@@ -72,7 +68,7 @@ const Footer = () => {
               className="flex items-center justify-center gap-2 bg-mitsubishi-gray/50 border border-mitsubishi-red/30 text-white px-8 py-4 rounded-full font-bold hover:bg-mitsubishi-gray transition-all duration-300"
             >
               <Phone className="w-5 h-5" />
-              6281292835369
+              0812-9283-5369
             </a>
           </div>
         </div>
@@ -81,24 +77,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <a href="#beranda" className="flex items-center gap-3 group">
-            <div className="relative">
-                <div className="w-12 h-12">
-                <Image 
-                    src="/images/logo/mitsubishi.svg"
-                    alt="Mitsubishi Logo"
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-contain"
+            <a href="#beranda" className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12">
+                {/* Pakai img biasa */}
+                <img 
+                  src="/images/logo/mitsubishi.svg"
+                  alt="Mitsubishi Logo"
+                  className="w-full h-full object-contain"
                 />
-                </div>
-            </div>
-            <div>
-                <h1 className="text-xl font-bold text-white">
-                <span className="text-mitsubishi-red">DAHLAN</span> MITSUBISHI
-                </h1>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-white">
+                  <span className="text-mitsubishi-red">DAHLAN</span> MITSUBISHI
+                </h4>
                 <p className="text-xs text-gray-400">Sales Consultant</p>
-            </div>
+              </div>
             </a>
             <p className="text-gray-400 text-sm mb-6">
               Sales resmi Mitsubishi Motors Indonesia. Melayani penjualan seluruh tipe Mitsubishi dengan harga terbaik dan pelayanan profesional.
@@ -166,12 +159,12 @@ const Footer = () => {
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <Phone className="w-5 h-5 text-mitsubishi-red flex-shrink-0 mt-0.5" />
-                  <span>0812 9283 5369</span>
+                  <span>0812-9283-5369</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:dahlan.mitsubishi@gmail.com"
+                  href="mailto:muhamaddahlan1404@gmail.com"
                   className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5 text-mitsubishi-red flex-shrink-0 mt-0.5" />
@@ -181,7 +174,7 @@ const Footer = () => {
               <li>
                 <div className="flex items-start gap-3 text-gray-400">
                   <MapPin className="w-5 h-5 text-mitsubishi-red flex-shrink-0 mt-0.5" />
-                  <span>Sun Star Prima Motor<br />Jl.Raya Tajur No.62 001/004 Pakuan Bogor Selatan - Kota Bogor</span>
+                  <span>Sun Star Prima Motor<br />Jl.Raya Tajur No.62, Bogor Selatan</span>
                 </div>
               </li>
             </ul>
